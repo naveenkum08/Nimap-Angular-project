@@ -1,0 +1,208 @@
+.main-container {
+    background-color: transparent;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+  
+  .form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 0.825rem;
+    background: #ffffff;
+    color: #2e323c;
+  }
+  
+  .card {
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .next-button {
+    float: right;
+    color: #3b5998;
+    /* border-radius: 80%; */
+  }
+  
+  .back-button {
+    float: left;
+    color: #3b5998;
+    /* border-radius: 50%; */
+  }
+  
+  .next-button:hover {
+    color: #ffffff;
+  }
+  
+  .back-button:hover {
+    color: #ffffff;
+  }
+  
+  .example-form-field {
+    width: 100%;
+  }
+  
+  .example-button-container > button {
+    margin: 0 12px;
+  }
+  
+  .badge {
+    background-color: #cfd1d8;
+    color: #2e323c;
+    font-weight: normal;
+  }
+  
+  /* Validation */
+  input.ng-touched.ng-invalid {
+    border-bottom: 3px red solid;
+  }
+  
+  input.ng-touched.ng-valid {
+    border-bottom: 3px rgb(27, 197, 27) solid;
+  }
+  
+  mat-slider {
+    width: 100%;
+  }
+  
+  
+  .image{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 100px;
+    width:100px;
+}
+.r1{
+    display: flex;
+    background-color: blue;
+    padding: 0.8em;
+}
+.head{
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.close{
+    color: white;
+    font-size: 20px;
+    margin-left: 350px;
+} 
+.pic button{
+    display: flexbox;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #ffffff; 
+}
+
+.pic img{
+   display: flex;
+}
+.pic input{
+   width: 0px;
+}
+.age{
+    margin-left: 200px;
+    width: 550px;
+}
+mat-slider{
+    width: 220px;
+}
+
+.name{
+    margin-top: -130px;
+     
+}
+mat-form-field{
+    margin-left: 200px;
+    width: 250px;
+}
+input{
+    width: 250px;
+    height: 25px;
+}
+.buttom {
+    margin-left: 160px;
+}
+.buttom button{
+    margin-left: 50px;
+    background-color: rgba(92, 154, 234, 0.904);
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border-color:  rgba(92, 154, 234, 0.904);
+}
+.text-danger{
+    margin-left: 150px;
+}
+
+.form{
+    margin-left: 200px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+/*
+.r1{
+    display: flex;
+    background-color: blue;
+    padding: 0.8em;
+}
+.head{
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.close{
+    color: white;
+    font-size: 20px;
+    margin-left: 400px;
+}   
+
+.pic button{
+     display: flexbox;
+
+     margin-left: -160px;
+}
+
+.pic img{
+    display: flex;
+}
+.pic input{
+    width: 0px;
+}
+.age{
+    margin-left: 160px;
+}
+input{
+    margin-left: 160px;
+    font-size: 15px;
+    width: 300px;
+    margin-bottom: 8px;
+}
+
+.name{
+    margin-top: -130px;
+     
+}
+mat-form-field{
+    margin-left: 160px;
+    width: 300px;
+}
+.buttom {
+    margin-left: 160px;
+}
+.buttom button{
+    margin-left: 50px;
+}
+.text-danger{
+    margin-left: 160px;
+} */

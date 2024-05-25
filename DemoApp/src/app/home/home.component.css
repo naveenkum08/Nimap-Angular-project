@@ -1,0 +1,191 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  background-image:url("../../assets/bg.jpg");
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-menu li a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-menu li {
+  margin-right: 1rem;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.search-bar-container {
+  padding: 6rem;
+  text-align: center;
+}
+
+.search-bar-container input {
+  margin-top: 10px;
+  padding: 0.5rem;
+  margin-right: 0.3rem;
+  width: 500px;
+  font-style: italic;
+  
+}
+
+#job {
+  padding: 0.5rem;
+  width: 130px;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+.search-bar-container button {
+  padding: 0.5rem 1rem;
+  margin-left: 50px;
+  background-color: aqua;
+  border-radius: 20px;
+}
+
+.search-bar-container h2 {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  margin-left: -400px;
+  color: #fff;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkbox-group label {
+  margin: 0 10px;
+}
+#full-time{
+  margin-left: -360px;
+}
+#part-time{
+  margin-left: -200px;
+}
+.full{
+  margin-left: -230px;
+  color: #fff;
+}
+.part{
+  margin-left: -230px;
+  color: #fff;
+}
+.register a{
+  text-decoration: none;
+}
+.content {
+  flex: 1;
+  padding: 2rem;
+  background-color:#f4f4f4;
+}
+
+#para1 {
+  font-family:cursive;
+  font-style: italic;
+  text-align: center;
+  font-size: 15px;
+  
+}
+
+.content h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#para {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 100;
+}
+
+.content button {
+  border-color: rgb(105, 204, 234);
+  color: rgb(105, 204, 234);
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color:#f4f4f4;
+  color:black;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer .social-media-icons {
+  display: flex;
+  justify-content:center;
+  
+}
+
+.footer .social-media-icons a {
+  color:black;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+#mail{
+  background-color: #333;
+  border-color: #007bff;
+  color:#fff;
+  padding: 10px;
+  width: 270px;
+}
+.mail{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 6rem;
+  
+}
+
+.dailog{
+  height: fit-content;
+}

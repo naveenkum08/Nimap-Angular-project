@@ -1,0 +1,68 @@
+<div class="home">
+  <section>
+    <nav class="navbar">
+      <div class="navbar-header">
+        <h1>Demo App</h1>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="">Clients</a></li>
+        <li><a href="profile">Employers</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar-container">
+      <h2>I'm looking for..</h2>
+      <form (submit)="onSearch()">
+        <input
+          type="text"
+          placeholder="enter a job description"
+          [(ngModel)]="searchLocation"
+          name="searchLocation"
+          required
+        />
+        <button type="submit">Search</button><br>
+        <input type="checkbox" id="full-time" name="jobType" value="full-time" class="form-check-input">
+        <label for="full-time" class="full form-check-label mr-3">Full Time</label>
+        <input type="checkbox" id="part-time" name="jobType" value="part-time" class="form-check-input">
+        <label for="part-time" class="part form-check-label">Part Time/Casual/Freelance</label>
+        <input
+          type="text" id="job"
+          placeholder="select the location"
+          [(ngModel)]="searchQuery"
+          name="searchQuery"
+          required
+        />
+      </form>
+      <br><br><br><br>
+      <button class="dialog" (click)="openDialog()">Register</button>
+    </div>
+  </section>
+
+  <div class="content text-center">
+    <p id="para1">We're leaders in</p>
+    <h1>Creative Digital Recruitment</h1><br>
+    <hr style="width: 100px; text-align: center; height: 5px; background-color: rgb(0, 242, 255); border-radius: 10px;"><br>
+    <p id="para">Based in Surry hills, the creative hub of Sydney, we are surrounded by creativity</p>
+    <p id="para">and that reflects on the type of jobs we recruit for</p>
+    <br><br>
+    <button>FIND OUT MORE ABOUT US</button>
+  </div>
+
+  <div class="mail">
+    <p id="para">Subscribe to our Job seeker Mailing List</p>
+     <input type="text" id="mail" placeholder="Enter your Email Address">
+  </div>
+  <footer class="footer">
+    <p>&copy; 2014 Two Bytes Consultancy.<b>Terms and Policies</b></p>
+    <div class="social-media-icons">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+</div>

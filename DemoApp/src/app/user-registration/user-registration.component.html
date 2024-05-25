@@ -1,0 +1,185 @@
+<div>
+  
+    <div class="r1 flex justify-between hover:cursor-pointer -mt-7">
+      <div class="head text-white text-3xl">Register</div>
+      <div>
+        <span class="close material-icons text-white text-3xl" mat-dialog-close>
+          highlight_off
+        </span>
+      </div>
+    </div>
+   
+   
+    <form [formGroup]="registrationForm" (ngSubmit)="data()">
+      <div class="d-flex flex-column flex-lg-row gap-4">
+        <!-- Profile Picture -->
+        <div>
+          <div class="pic mt-2">
+            <img
+              [src]="profilePhotoString"
+              class="image w-48 hover:cursor-pointer"
+              (click)="triggerFileInput()"
+            />
+            <input
+              type="file"
+              class="hidden"
+              id="fileUpload"
+              formControlName="imageUrl"
+              (change)="onFileSelect($event)"
+              accept="image/*"
+            />
+            <button
+              type="button"
+              class="text-xs btn btn-link no-underline"
+              (click)="triggerFileInput()"
+            >
+              upload your photo
+            </button>
+          </div>
+        </div>
+
+        <!-- Form Fields -->
+        <div class="name w-full">
+          <div class="row mt-2">
+            <!-- First Name input -->
+            <div class="form col-lg-6 mb-4">
+              <!-- <label class="labels block mb-2">First Name</label> -->
+              <input
+                type="text"
+                placeholder="First Name"
+                class="form-control"
+                formControlName="firstName"
+              />
+            </div>
+
+            <!-- Last Name input -->
+            <div class="form col-lg-6 mb-4">
+              <!-- <label class="labels block mb-2">Last Name</label> -->
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="form-control"
+                formControlName="lastName"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <!-- E-mail input -->
+            <div class="form mb-4">
+              <input
+                type="text"
+                placeholder="Email"
+                class="form-control"
+                formControlName="email"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <!-- Mobile No input -->
+            <div class="form mb-4">
+              <!-- <label class="labels block mb-2">Mobile No</label> -->
+              <input
+                type="text"
+                placeholder="Eg: 8978166666"
+                class="form-control"
+                formControlName="phoneNumber"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <!-- Age input -->
+            <div class="flex gap-2">
+              <span class="age labels block mt-2.5">Age      </span>
+              <mat-slider min="20" max="60" step="1" showTickMarks discrete>
+                <input matSliderThumb formControlName="age" />
+              </mat-slider>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <!-- Country input -->
+            <div>
+              <mat-form-field class="w-full">
+                <mat-label>Country</mat-label>
+                <mat-select formControlName="country">
+                  <mat-option
+                    *ngFor="let country of countries"
+                    [value]="country"
+                  >
+                    {{ country }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <!-- State input -->
+            <div>
+              <mat-form-field class="w-full">
+                <mat-label>State</mat-label>
+                <mat-select formControlName="state">
+                  <mat-option *ngFor="let state of states" [value]="state">
+                    {{ state }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <!-- Address input -->
+            <div class="form mb-4">
+              <!-- <label class="labels block mb-2">First Name</label> -->
+              <input
+                type="text"
+                placeholder="Address"
+                class="form-control"
+                formControlName="address"
+              />
+            </div>
+          </div>
+
+          <!--Tags input -->
+          <div class="form form-outline justify-content-center mb-4">
+            <!-- <label class="labels">Tags</label> -->
+            <input
+              type="text"
+              placeholder="tags"
+              class="form-control form-control-lg w-full"
+              formControlName="tags"
+              (keydown.space)="addTag($any($event.target).value)"
+            />
+            <a
+              *ngFor="let tag of tags"
+              class="badge badge-light mr-1"
+              (click)="removeTag(tag)"
+              >{{ tag }}
+              <span class="material-icons text-xs pt-0.5"> close </span></a
+            >
+          </div>
+
+          <!-- buttons -->
+          <div class="buttom flex justify-end gap-2">
+            <button
+              class="btn btn-outline-secondary"
+              type="reset"
+              mat-dialog-close
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary bg-sky-500 hover:bg-sky-500 border-sky-500"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+   
+</div>

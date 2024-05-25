@@ -1,0 +1,48 @@
+<nav class="navbar">
+  <div class="navbar-header">
+    <h1>Demo App</h1>
+  </div>
+  <ul class="navbar-menu">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Jobs</a></li>
+    <li><a href="">Clients</a></li>
+    <li><a href="profile">Employers</a></li>
+    <li><a href="">Contact Us</a></li>
+  </ul>
+</nav>
+<div *ngIf="loading" class="text-center mt-5">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+<div *ngIf="error" class="alert alert-danger" role="alert">{{ error }}</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="mb-4">Profile</h1>
+    </div>
+    <div class="col-md-4" *ngFor="let profile of profile">
+      <div class="profile-card">
+        <div class="profile-image">
+          <img [src]="profile.imageUrl" alt="Profile Photo" class="img-fluid">
+          <button class="edit">EDIT PHOTO</button>
+          <button class="edit">EDIT PROFILE</button>
+        </div>
+        <div class="profile-details">
+          <p>I'm {{profile.firstName}} {{profile.lastName}} and I'm above {{profile.age}} years and you can send your emails to
+           <b> <a href="">{{profile.email}}</a></b>. I live in the state of {{profile.state}}. I like to play cricket, volleyball and read books.
+            And please send me newsletters. Please reach out to me on my {{profile.phoneNumber}}. <br><br>
+            <Button>I Agree</Button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="mail">
+    <p id="para">Subscribe to our Job seeker Mailing List</p>
+     <input type="text" id="mail" placeholder="Enter your Email Address">
+  </div>
+  
